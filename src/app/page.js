@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
+import CustomButton from '@/components/CustomButton';
 
 export default function Home() {
   return (
@@ -16,9 +17,7 @@ export default function Home() {
       <div>
         <span>
           <Link href="/prod-catalogue">
-            <Button variant="contained" sx={{ borderRadius: 0, mr: 1 }}>
-              Click me!
-            </Button>
+            <CustomButton btnName="click me!"/>
           </Link>
         </span>
         to go to the Product Catalogue page.
